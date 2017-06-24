@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script>
+        function btn1() {
+            if (confirm("关闭Demo4?")){
+                page.close();
+            }
+        }
+        function btn2() {
+            alert("移入收藏！");
+        }
+        function btn3() {
+            confirm("确定删除吗？");
+        }
+        function btn4() {
+            page = open("Demo4.html", "Demo4.html",
+                    "width=300px,height=180px,top=100px,left=100px");
+        }
+        function btn5(){
+            history.back();
+        }
+    </script>
+</head>
+<body>
+<button type="button" onclick="btn1()">Close</button>
+<button type="button" onclick="btn2()">弹出收藏提示</button>
+<button type="button" onclick="btn3()">Delete Confirm</button>
+<button type="button" onclick="btn4()">Opne new Page</button>
+<button type="button" onclick="btn5()">Go back</button>
+<a href="Demo5.html" target="_self">go Demo5.html</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo2</title>
+</head>
+<body>
+    <script>
+        myWindow=window.open('http://www.baidu.com','name',
+                'left=200px,top=200px,' +
+                'width=200px,height=100px,toolbar=yes' +
+                'titlebar=yes,menubar=yes,location=yes');
+        //myWindow.document.write("This is myWindow");
+        function go() {
+            var flag= confirm("确定要关闭吗？");
+            if(flag){
+                myWindow.close();
+            }
+         }
+    </script>
+    <button type="button" onclick="go()">Close</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prise.html</title>
+    <script>
+        var url = document.referrer;
+        alert(url);
+        var URL = document.URL;
+        if (url == "") {
+            document.writeln("不是从页面连接过来的！");
+            document.writeln("5秒钟后跳转到登录界面");
+            setTimeout("goLogin()", 5000);
+        } else {
+            alert("URL=" + URL);
+            document.writeln("5秒钟后跳转到登录界面");
+            setTimeout("goLogin()", 5000);
+        }
+        function goLogin() {
+            location.href = "login.html";
+        }
+        function GoBac() {
+            history.back();
+        }
+        function  GoFow() {
+            history.forward()
+        }
+
+    </script>
+</head>
+<body>
+<h1>大奖赶快拿，笔记本！数码相机！</h1>
+<button type="button" onclick="GoBac()">GoBack</button>
+<button type="button" onclick="GoFow()">GoFow</button>
+</body>
+</html>

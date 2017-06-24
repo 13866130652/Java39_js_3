@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index.html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 300px;
+            height: auto;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        p {
+            text-align:center ;
+        }
+
+        p:hover{
+            cursor: pointer;
+            color: blue;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+    </style>
+    <script>
+        function goPrais(){
+            location.href="Prise.html";
+        }
+        function GoBac() {
+            history.back();
+        }
+        function  GoFow() {
+            history.forward()
+        }
+    </script>
+</head>
+<body>
+<div>
+    <img src="../img/1.jpg" alt="擒人节的礼物" title="礼物"/>
+    <p onclick="goPrais()">去领奖</p>
+    <button type="button" onclick="GoBac()">GoBack</button>
+    <button type="button" onclick="GoFow()">GoFow</button>
+</div>
+</body>
+</html>

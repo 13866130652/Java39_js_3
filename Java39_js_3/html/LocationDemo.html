@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LocationDemo</title>
+    <script>
+        function  goNewPage() {
+            location.href="OnclickDemo.html";
+        }
+        var i = 0;
+        function ref(){
+            location.reload();
+            alert("第"+(i+1)+"次加载");
+            i++;
+        }
+    </script>
+</head>
+<body>
+    <a href="#" target="_self" onclick="goNewPage()">去新页面</a>
+    <a href="#" target="_self" type="button" onclick="ref()">重新加载页面，相当于刷新</a>
+</body>
+</html>
